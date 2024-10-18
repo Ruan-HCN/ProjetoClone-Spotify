@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="icon" href="../img/logo3.png">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <img src="../img/notas.png" class="background-image" alt="Background">
+    <div class="container">
+        <div class="logo"><img src="../img/logo3.png" alt="Logo"></div>
+        <h2>Login no Spotify</h2>
+        <form id="registrationForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Ex: algumacoisa123@gmail.com">
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required placeholder="Ex: Nome@1230">
+
+            <button class="logar" type="submit" id="cadastrar" value="Enviar">Login</button>
+        </form>
+        <p id="message"></p>
+        <div class="divider"></div>
+        <h2>Outras Formas de Login</h2>
+        <div class="extra-buttons">
+            <a href="#"><button><img src="../img/google.png" alt="Google" class="button-icon">Google</button></a>
+            <a href="#"><button><img src="../img/face2.png" alt="Facaebook" class="button-icon">Facaebook</button></a>
+            <a href="#"><button><img src="../img/apple.png" alt="Apple" class="button-icon">Apple</button></a>
+        </div>
+        <br>
+        <a href="../index.html"><button class="home">Voltar</button></a>
+    </div>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

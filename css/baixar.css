@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #19e68c;
+    color: white;
+    transition: all 0.5s ease;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow-x: hidden;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+li,
+a,
+button {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 15px;
+    background-color: black;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.logo img {
+    width: 150px;
+    height: 45px;
+}
+
+.nav {
+    list-style: none;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav li a:hover {
+    color: #1ED760;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #1ED760;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d9948;
+}
+
+.dropdown-menu {
+    position: absolute;
+    background-color: black;
+    box-shadow: 0 0 2px black;
+    display: none;
+    border: 1px solid #9b8082;
+    left: 1260px;
+    top: 61px;
+  }
+  
+  .dropdown-menu h6 {
+    font-size: 13.5px;
+  }
+  
+  .dropdown-menu a {
+    display: block;
+    color: white;
+    padding: 10px;
+    border-bottom: 1px solid #9b8082;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu a:last-child {
+    border-bottom: none;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+.verificado {
+    position: relative;
+    text-align: center;
+    top: auto;
+    margin-top: 100px;
+    color: black;
+}
+
+.verificado img {
+    height: 200px;
+    width: 200px;
+}
+
+.title-verificado {
+    font-size: 60px;
+    position: relative;
+    text-align: center;
+    bottom: 35px;
+    margin-top: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+.subtitle-verificado {
+    position: relative;
+    text-align: center;
+    top: 25px;
+    margin-top: -55px;
+    color: black;
+    font-weight: bold;
+}
+
+.extra-buttons button img.button-icon,
+.extra-buttons button img.button-icon-2,
+.extra-buttons button img.button-icon-3 {
+    width: 30px;
+    height: 30px;
+}
+
+.extra-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.extra-buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background-color: black;
+    border: 1px solid black;
+    gap: 5px;
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+}
+
+.extra-buttons button img {
+    margin-right: 10px;
+}
+
+.extra-buttons a {
+    text-decoration: none;
+}
+
+.plataformas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222326;
+    overflow: hidden;
+    margin-top: 115px;
+}
+
+.plataformas img {
+    width: 30%;
+    max-width: none;
+    height: auto;
+    display: block;
+}
+
+.texto-plataformas {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.title-plataformas {
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.texto-plataformas ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.texto-plataformas ul li {
+    font-size: 20px;
+    color: #19e68c;
+    justify-content: center;
+    text-align: center;
+    margin: 5px 0;
+    display: inline-block;
+}
+
+.footer {
+    display: flex;
+    max-width: auto;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.footer h4 {
+    font-weight: bold;
+    color: gray;
+}
+
+.footer ul,
+li {
+    list-style: none;
+}
+
+footer .footer ul {
+    width: 25%;
+}
+
+.logo_fundo {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.logo_fundo img {
+    width: 150px;
+    height: 45px;
+}
+
+footer .rodape_nav li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+footer a:hover {
+    color: #1ED760;
+}
+
+.redes_sociais {
+    display: flex;
+}
+
+.redes_sociais img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 100%;
+}
+
+.redes_sociais a {
+    display: inline-block;
+}
+
+.redes_sociais a:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 2.5px green;
+}
